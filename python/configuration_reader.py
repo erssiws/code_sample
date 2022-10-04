@@ -1,10 +1,13 @@
-"""Methods to retrieve the configurations of a given analytical view from the config db in SQL Server and store them
-in a nested Python dictionary."""
+"""
+Methods to retrieve the configurations of a given analytical view from the config db in SQL Server and store them
+in a nested Python dictionary.
+"""
 import collections
 
 
 def retrieve_config(spark, ds, analytical_view_name):
-    """You need to review this function.
+    """
+    You need to review this function.
 
     Retrieve the configuration of a given analytical view from the config db.
 
@@ -26,7 +29,8 @@ def retrieve_config(spark, ds, analytical_view_name):
 
 
 def apply_func(obj, func, skipped_keys):
-    """You need to review this function.
+    """
+    You need to review this function.
 
     Recursively apply func to the value of obj and skip the keys from the skipped_keys set.
 
@@ -63,7 +67,8 @@ def apply_func(obj, func, skipped_keys):
 
 
 def analytical_view_definition(spark, ds, analytical_view_name):
-    """You can skip this function for this code review exercise.
+    """
+    You can skip this function for this code review exercise.
 
     Query the analytical_view_definition table from the config db in SQL Server and return the definition of
     the analytical view with the given analytical_view_name.
@@ -86,7 +91,8 @@ def analytical_view_definition(spark, ds, analytical_view_name):
 
 
 def analytical_view_dimensions(spark, ds, analytical_view_name):
-    """You can skip this function for this code review exercise.
+    """
+    You can skip this function for this code review exercise.
 
     Query the analytical_view_dimension table from the config db in SQL Server and return the dimensions
     of the analytical view with the given analytical_view_name.
@@ -108,7 +114,8 @@ def analytical_view_dimensions(spark, ds, analytical_view_name):
 
 
 def analytical_view_measures(spark, ds, analytical_view_name):
-    """You can skip this function for this code review exercise.
+    """
+    You can skip this function for this code review exercise.
 
     Query the analytical_view_measure table from the config db in SQL Server and return the measures
     of the analytical view with the given analytical_view_name.
@@ -130,7 +137,8 @@ def analytical_view_measures(spark, ds, analytical_view_name):
 
 
 def do_normalize(x):
-    """You can skip this function for this code review exercise.
+    """
+    You can skip this function for this code review exercise.
 
     Normalize the format of the given string, e.g., strip away spaces and turn into upper cases.
     Return the normalized string.
