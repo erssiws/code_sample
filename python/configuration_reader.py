@@ -1,7 +1,5 @@
-"""
-Methods to retrieve the configuration of the given analytical view from the config db in SQL Server
-and store it in a nested Python dictionary.
-"""
+"""Methods to retrieve the configurations of a given analytical view from the config db in SQL Server and store them
+in a nested Python dictionary."""
 import collections
 
 
